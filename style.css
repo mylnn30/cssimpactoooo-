@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --primary-color: beige;
+    --secondary-color: white;
+    --tertiary-color: black;
+    --font-family: "DM Sans";
+}
+
+*{
+    font-family:var(--font-family);
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: var(--primary-color);
+}
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    h2{
+      margin-left: 10em;
+      color: var(--secondary-color);
+    
+    }
+    ul {
+        justify-content: space-between;
+        margin-right: 6em;
+        
+        li {
+            list-style-type:none;
+            display: inline;
+           
+        a {
+            text-decoration: none;
+            margin: 15px;
+            font-size: medium;
+            color: var(--secondary-color);
+            display: inline-block;   
+            
+           
+        }
+   a:link{
+            color: white;
+        }
+         
+       
+     
+        a:visited {
+            color: pink;
+        }
+
+        a:hover{
+            transform: scale(1.2);
+            
+        }
+     
+          }
+    }
+
+
+       
+}
+
+
+
+
+main {
+        section.description {
+           
+           
+        
+            background-color: var(--primary-color);
+            h2 {
+                text-align: center;
+                margin: 20px;
+                font-size: 24pt;
+            }
+            p {
+               text-align: center;
+               font-size: 16pt;
+               width: 600px;
+               display: block;
+               margin: 0 auto;
+              
+            }
+        }
+
+
+
+section.page-about {
+            background-color: var(--tertiary-color);
+            display: flex; 
+            margin-top: 35px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+
+           
+            article {
+                margin-bottom: 40px;
+                
+                
+                h2 {
+                    color: var(--secondary-color);
+                    font-size: 20pt;
+                    color: var(--primary-color);
+                    margin-left: 30px;
+                }
+                p {
+                background-color: var(--primary-color);
+                border: solid black 2px;
+                border-radius: 10px;
+                font-size: 16pt;
+                padding: 10px;
+
+            }
+
+           
+        }
+         article.about-filfood{
+                width:400px;
+                text-align: center;
+                margin-right: 6em;
+                h2 {
+                    margin-right: 20px;
+                }
+            }
+       
+            
+        }
+
+
+
+section.dishes {
+            h2.title {
+                font-size: 26pt;
+                padding: 2rem;
+                text-align: center;
+            }
+    section.dishes-content {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        margin: 0  15px;
+    img {
+        width: 400px;
+        height: 350px;
+    }
+    article {
+        padding: 10px;
+        width: 600px;
+        text-align: center;
+        border: solid black 0.8px;
+        margin-top: 20px;
+        
+        a {
+            display: inline-block;
+            background-color: var(--tertiary-color);
+            color: var(--secondary-color);
+            text-decoration: none;
+            
+
+            
+        }
+      
+
+    }
+
+      a:hover{
+                transform: scale(1.2);
+            }
+    }
+
+}
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 200px;
+}
+
+

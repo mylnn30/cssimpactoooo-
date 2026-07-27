@@ -1,0 +1,104 @@
+div {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    margin: 20px;
+    text-align: center;
+    padding: 30px;
+}
+
+@keyframes IKAWBAHALA {
+    0% {
+        opacity: 0.1;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+    
+}
+
+/*TRANSLATE*/
+div.one:hover{
+    opacity: 0.5;
+    transform: translate(30px, 20px);
+    transition: transform 1s ease-in,
+                opacity 2s ease-in;
+  
+}
+
+div.two:hover{
+    transform: translateX(-50px);
+}
+
+div.tree:hover{
+    border-radius: 300px;
+    box-shadow: 0px 0px 40px black;
+    transform: translateY(-50px);
+    transition: transform 2s ease-in-out,
+                border-radius 3s ease-in-out,
+                box-shadow 4s ease-in-out;
+                
+}
+
+div.four:hover{
+   
+    transform: perspective(500px) translateZ(100px);
+}
+
+div.five:hover{
+    transform: perspective(100px) translate3d(30px, 20px, -50px);
+}
+
+
+/*SCALE*/
+
+div.six:hover{
+    transform: scale(1.2);
+    animation: IKAWBAHALA 6s ease-out;
+}
+
+div.seven:hover{
+    transform: scaleX(3);
+}
+
+div.eight:hover{
+    transform: scaleY(3);
+}
+
+div.nine:hover{
+    transform: perspective(100px) scaleZ(3);
+}
+
+/*ROTATE*/
+
+div.ten:hover{
+    transform: rotate(45deg);
+}
+
+div.eleven:hover{
+    transform: rotateX(180deg);
+}
+
+div.twilb:hover{
+    transform: rotateY(180deg);
+}
+
+/*SPISYAL TEST*/
+
+div.spisyal{
+    width: 400px;
+    height: 200px;
+    background-color: blueviolet;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.spisyal:hover{
+    transform: translateX(100px) scale(1.2) rotate(130deg);
+}
+
